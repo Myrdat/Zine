@@ -4,32 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="/js/script.js"></script>
 </head>
 <body>
- <header></header>
+ <header>
+
+ </header>
  
  <main>
-    <h1>Колізія. <br>Такий збіг обставин</h1>
-    <p>Любий друже, <br>нас оточує світ масовості та шаблонності <br> і ми неваільно стаємо його жертвами. <br>Шаблоне виробництво, массова культура,
+    <h1 class="title">Колізія. <br>Такий збіг обставин</h1>
+    <p class="paragraph">Любий друже, <br>нас оточує світ масовості та шаблонності <br> і ми неваільно стаємо його жертвами. <br>Шаблоне виробництво, массова культура,
        <br>стереотимне мисленя. <br>З каілцтв, шрамів та вад постають <br>індивідуаьльність та інакшість. <br> Цей зін замислювавася не лише як ода 
        <br> скаліченим автомобілям. <br>Тому дорогий приятелю, спробуй зрозуміти його глибше. <br>Хоча не мені тобі вказувати, <br> Мій пересічний 
        колего
     </p>
-    <ul>
-        <li><img src="/images/1.jpg" width="1080" alt=""></li>
-        <li><img src="/images/DSC06828.JPG" alt=""></li>
-        <li><img src="/images/DSC06828.JPG" alt=""></li>
-        <li><img src="/images/DSC06828.JPG" alt=""></li>
-        <li><img src="/images/DSC06828.JPG" alt=""></li>
-        <li><img src="/images/DSC06828.JPG" alt=""></li>
-        <li><img src="/images/DSC06828.JPG" alt=""></li>
-        <li><img src="/images/DSC06828.JPG" alt=""></li>
-        <li><img src="/images/DSC06828.JPG" alt=""></li>
-        <li><img src="/images/DSC06828.JPG" alt=""></li>
-    </ul>
-    <p>
+
+    <div class="container">
+        <ul>
+            <li class="mySlides">  <div class="numbertext">1 / 9</div> <img src="/images/1.jpg" width="1080" alt="Zin"></li>
+            <li class="mySlides"> <div class="numbertext">2 / 9</div><img src="/images/2.jpg" width="1080" alt="Zin"></li>
+            <li class="mySlides"> <div class="numbertext">3 / 9</div><img src="/images/DSC09134.jpg" width="1080" alt="Zin"></li>
+            <li class="mySlides"> <div class="numbertext">4 / 9</div><img src="/images/DSC09154.jpg" width="1080" alt="Zin"></li>
+            <li class="mySlides"> <div class="numbertext">5 / 9</div><img src="/images/DSC09162.jpg" width="1080" alt="Zin"></li>
+            <li class="mySlides"> <div class="numbertext">6 / 9</div><img src="/images/DSC09178.jpg" width="1080" alt="Zin"></li>
+            <li class="mySlides"> <div class="numbertext">7 / 9</div><img src="/images/DSC09218.jpg" width="1080" alt="Zin"></li>
+            <li class="mySlides"> <div class="numbertext">8 / 9</div><img src="/images/DSC09252.jpg" width="1080" alt="Zin"></li>
+            <li class="mySlides"> <div class="numbertext">9 / 9</div><img src="/images/DSC09257.jpg" width="1080" alt="Zin"></li>
+            <!-- <li><img src="/images/DSC06828.jpg" width="1080" alt=""></li> -->
+        </ul>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+    
+    
+        <ul class="row">
+            <li class="column"><img class="demo cursor" src="/images/1.jpg" style="width:100%" onclick="currentSlide(1)" width="1080" alt="1"></li>
+            <li class="column"><img class="demo cursor"  src="/images/2.jpg" style="width:100%" onclick="currentSlide(2)"  width="1080" alt="2"></li>
+            <li class="column"><img class="demo cursor"  src="/images/DSC09134.jpg" style="width:100%" onclick="currentSlide(3)" width="1080" alt="3"></li>
+            <li class="column"><img class="demo cursor"  src="/images/DSC09154.jpg" style="width:100%" onclick="currentSlide(4)" width="1080" alt="4"></li>
+            <li class="column"><img class="demo cursor"  src="/images/DSC09162.jpg" style="width:100%" onclick="currentSlide(5)" width="1080" alt="5"></li>
+            <li class="column"><img class="demo cursor"  src="/images/DSC09178.jpg" style="width:100%" onclick="currentSlide(6)" width="1080" alt="6"></li>
+            <li class="column"><img class="demo cursor" src="/images/DSC09218.jpg" style="width:100%" onclick="currentSlide(7)" width="1080" alt="7"></li>
+            <li class="column"><img class="demo cursor"  src="/images/DSC09252.jpg" style="width:100%" onclick="currentSlide(8)" width="1080" alt="8"></li>
+            <li class="column"><img class="demo cursor"  src="/images/DSC09257.jpg" style="width:100%" onclick="currentSlide(9)" width="1080" alt="9"></li>
+            <!-- <li><img src="/images/DSC06828.jpg" width="1080" alt=""></li> -->
+        </ul>
+    
+    </div>
+    
+    
+
+    <p class="name">
         Fin <br> Андрій Васина <br> Ярослав Сулима <br> Ольга Кедзіор 
     </p>
 
@@ -45,6 +77,9 @@
     </div>
 </div>
 <script src="./js/modal.js"></script> -->
+
+
+
 
 </body>
 </html>
